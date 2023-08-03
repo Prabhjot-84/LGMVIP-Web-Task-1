@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Kelly+Slab&family=Lobster+Two&family=Merienda&family=Merriweather+Sans&family=Neucha&family=Nova+Cut&family=Nova+Square&family=Patrick+Hand&family=Piazzolla:opsz,wght@8..30,200&family=Rancho&family=Roboto+Condensed&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@300&family=Ropa+Sans&family=Satisfy&family=Sirin+Stencil&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>To-do</title>
+</head>
+<body>
+    <div class="container"> 
+
+        <h1 class="heading"> Todos List </h1> 
+
+        <div class="stats">
+            <div class="total"> Total Todos :&nbsp;<span id="total"> 0 </span> </div>
+            <div class="complete"> Completed Todos :&nbsp;<span id="complete"> 0 </span> </div>
+            <div class="incomplete"> Incomplete Todos :&nbsp;<span id="incomplete"> 0 </span> </div>
+        </div>
+
+        <div class="container-2" id="cont">
+
+            <div class="add-todo">
+                <input id="input-field" type="text" placeholder="Enter your todos here">
+                <button class="add-btn" onclick="addTodo()"> Add </button>
+            </div>
+
+            <ul class="todos-list" id="todos-list">
+                <!-- <li>
+                    <div> 
+                        <i class="fa-regular fa-circle-check"></i> 
+                        <span>Here is your todo for testing.</span> 
+                    </div>
+                    <i class="fa-solid fa-trash"></i>
+                </li> -->
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
